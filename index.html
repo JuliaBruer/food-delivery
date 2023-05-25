@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lieferus</title>
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body onload="init()">
+    <div class="show-order-container d-none" id="show-order-container">
+        <p class="order-text">Vielen Dank für Ihre Bestellung!</p>
+        <img src="./img/order.png" class="order-img">
+    </div>
+
+    <header class="header">
+       <img class="logo" src="img/logo.PNG">
+       <h1>Lieferus</h1>
+    </header>
+
+    <div class="main">
+        <div class="contant">
+            <div class="left-container">
+                <img class="pizzaImg" src="img/pizza.jpg">
+                <img class="logoMrBurger" src="img/mrBurger.PNG">
+                
+                <div class="reviews">
+                    <h2>Mr. Burger</h2>
+                    <img class="icons" src="img/star.svg" alt="star">
+                    <img class="icons" src="img/star.svg" alt="star">
+                    <img class="icons" src="img/star.svg" alt="star">
+                    <img class="icons" src="img/star.svg" alt="star">
+                    <img class="icons" src="img/star-half.svg" alt="star">
+                    <span class="spans">(453 Bewertungen)</span>
+                </div>
+
+                <div class="informations">
+                    <img class="icons" src="img/bike.svg" alt="bike-icon">
+                    <span class="spans">kostenlose Lieferung</span>
+                    <img class="icons" src="img/watch.svg" alt="">
+                    <span class="spans">30-60 Minuten</span>
+                    <img class="icons" src="img/bag.svg" alt="">
+                    <span class="spans">mind. 15,00 €</span>
+
+                    <p>Bei Mr. Burger schreiben wir das Motto <b>jeder kommt auf seine Kosten</b> groß. Ob du gerne saftiges Fleisch, einen vegetarischen Burger oder einen knackigen Salat haben möchtest - bei uns ist für jeden Geschmack etwas dabei.</p>
+                </div>
+
+                <div class="li-container">
+                    <ul class="ul-container">
+                        <a href="#burger"><li class="list-items">Burger</li></a>
+                        <a href="#vegetarian-burger"><li class="list-items">vegetarische Burger</li></a>
+                        <a href="#side-dish"><li class="list-items">Beilagen</li></a>
+                        <a href="#sauces"><li class="list-items">Saucen</li></a>
+                        <a href="#drinks"><li class="list-items">Getränke</li></a>
+                        <a href="#salads"><li class="list-items">Salate</li></a>
+                    </ul>
+                </div>
+
+                <div id="menucard-container" class="menucard-container">
+                    <div id="dishes" class="dish"></div>
+                </div>
+            </div>
+
+            <div class="right-container" id="content-cart">
+            </div>
+        </div>
+    </div>
+
+    <footer onclick="footerAlert()" class="footer">
+        <p>Ein Restaurant anmelden</p>
+        <p>AGB</p>
+        <p>Datenschutzerklärung</p>
+        <p>Impressum</p>
+    </footer>
+</body>
+</html>

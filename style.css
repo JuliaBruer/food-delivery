@@ -1,0 +1,312 @@
+html, body {
+    scroll-behavior: smooth;
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.header {
+    padding-left: 20px;
+    background-color: #ff8c44;
+    position: sticky;
+    display: flex;
+    align-items: center;
+    top: 0;
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+
+h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-left: 10px;
+}
+
+.contant {
+    display: flex;
+}
+
+.left-container {
+    width: 70%;
+    height: auto;
+}
+
+.right-container {
+    width: 30%;
+    height: auto;
+    position: fixed;
+    top: 120px;
+    right: 0;
+    text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 15px;
+}
+
+.pizzaImg {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.logoMrBurger {
+    width: 10%;
+    height: auto;
+    transform:translate(20px,-35px);
+    border: 2px solid white;
+    z-index: -1;
+}
+
+.reviews, .informations {
+    margin: 0 15px 20px 15px;
+}
+
+h2 {
+    color: rgb(116, 51, 30);
+    margin-top: 5px;
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+
+.icons {
+    width: 18px;
+}
+
+.spans {
+    font-size: 15px;
+    padding-right: 15px;
+}
+
+.li-container {
+    margin: 0;
+    font-size: 14px;
+    background-color: #f8f5f2;
+    display: flex;
+    justify-content: space-around;
+}
+
+.ul-container {
+    margin: 0;
+    padding: 0;
+}
+
+.list-items {
+    margin: 20px;
+    padding: 10px;
+    font-size: 17px;
+    list-style: none;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.list-items:hover {
+    background-color: #ff8c44;
+    border-radius: 18px;
+    color: #f8f5f2;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(116, 51, 30);
+}
+
+.menucard-img {
+    width: 100%;
+    height: 30vh;
+    object-fit: cover;
+}
+
+h3 {
+    color: rgb(116, 51, 30);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 20px;
+    margin: 0;
+    font-size: 30px;
+    background-color: #f8f5f2;
+}
+
+h4 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.dish {
+    font-family: Century, Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    border: 1px solid #ebebeb;
+    border-radius: 2px;
+    margin: 10px;
+    padding: 0 0 15px 15px;
+    color: #0a3847;
+}
+
+.add-btn {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    cursor: pointer;
+}
+
+.empty-cart {
+    padding: 10px;
+}
+
+.empty-cart-img {
+    width: 70px;
+}
+
+.empty-cart-text {
+    font-size: 20px;
+}
+
+.dish-amount-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.btn-minus, .btn-plus {
+    cursor: pointer;
+    height: 25px;
+    width: 25px;
+    border-radius: 4px;
+    background-color: #ff8c44;
+    border-color: #ff8c44;
+    font-weight: bold;
+    font-size: 15px;
+    margin: 5px;
+    padding-top: 5px;
+}
+
+.btn-plus {
+    margin-right: 20px;
+}
+
+.hr {
+    height: 12px;
+    border: 0;
+    box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
+    margin: 10px;
+}
+
+.order-btn {
+    background-color: #ff8c44;
+    color: #f8f5f2;
+    border-radius: 20px;
+    border: #ff8c44;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 8px;
+    margin: 40px;
+    cursor: pointer;
+}
+
+.order-btn:hover {
+    color: rgb(116, 51, 30);
+}
+
+.order-btn-active {
+    opacity: 0.4;
+}
+
+.show-order-container {
+    margin: 0;
+    padding: 10px;
+    position: fixed;
+    background-color: #f8f5f2;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.order-text {
+    color: rgb(116, 51, 30);
+    font-weight: bold;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0;
+}
+
+.order-img {
+    width: 40%;
+    height: auto;
+    object-fit: cover;
+    position: relative;
+    left: 30%;
+    display: flex;
+    align-items: center;
+}
+
+.d-none {
+    display: none;
+}
+
+.footer {
+    background-color: #0a3847;
+    padding: 20px;
+    color: #f8f5f2;
+    font-size: 15px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 720px) {
+    .right-container {
+        margin-left: 10px;
+    }
+
+    .cart-items {
+        font-size: 20px;
+    }
+    
+    h2 {
+        font-size: 20px;
+    }
+
+    .dish-amount-name {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .hr {
+        margin: 5px;
+    }
+
+    .order-text {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .right-container {
+        margin-left: 10px;
+    }
+    
+    .cart-items {
+        font-size: 15px;
+    }
+    
+    h2 {
+        font-size: 15px;
+    }
+
+    .dish-amount-name {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .hr {
+        margin: 2px;
+    }
+}
