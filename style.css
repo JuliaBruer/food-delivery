@@ -261,6 +261,11 @@ h4 {
     cursor: pointer;
 }
 
+.footer-text:hover {
+    color: #ff8c44;
+    text-decoration: underline;
+}
+
 @media screen and (max-width: 720px) {
     .right-container {
         margin-left: 10px;
@@ -277,10 +282,15 @@ h4 {
     .dish-amount-name {
         display: flex;
         flex-wrap: wrap;
+        padding: 0;
     }
 
     .hr {
         margin: 5px;
+    }
+
+    .order-btn {
+        margin: 40px 10px;
     }
 
     .order-text {
@@ -304,9 +314,14 @@ h4 {
     .dish-amount-name {
         display: flex;
         flex-wrap: wrap;
+        padding: 0;
     }
 
     .hr {
         margin: 2px;
+    }
+
+    .order-btn {
+        margin: 40px 10px;
     }
 }
