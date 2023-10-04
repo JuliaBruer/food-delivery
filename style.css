@@ -40,8 +40,11 @@ h1 {
 .right-container {
     width: 30%;
     height: auto;
+    max-height: 600px;
+    overflow: auto;
     position: fixed;
     top: 120px;
+    bottom: 10px;
     right: 0;
     text-align: center;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -77,9 +80,35 @@ h2 {
     width: 18px;
 }
 
-.spans {
-    font-size: 15px;
+.ratings {
+    font-size: 13px;
     padding-right: 15px;
+    padding-left: 5px;
+    text-decoration: underline;
+}
+
+.informations {
+    color: rgba(60, 76, 79, 0.62);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.information-containers {
+    display: flex;
+    align-items: center;
+    padding-top: 5px;
+}
+
+.spans {
+    font-size: 13px;
+    padding-right: 15px;
+    padding-left: 5px;
+}
+
+.information-text {
+    color: rgba(60, 76, 79, 0.62);
+    margin-left: 15px;
 }
 
 .li-container {
@@ -96,7 +125,7 @@ h2 {
 }
 
 .list-items {
-    margin: 20px;
+    margin: 10px;
     padding: 10px;
     font-size: 17px;
     list-style: none;
@@ -151,6 +180,10 @@ h4 {
     align-items: flex-start;
     justify-content: flex-end;
     cursor: pointer;
+}
+
+.add-btn-img:hover {
+    transform: scale(1.1);
 }
 
 .empty-cart {
@@ -216,6 +249,28 @@ h4 {
     opacity: 0.4;
 }
 
+.error {
+    animation: shake 0.1s linear 10;
+}
+
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-3px);
+    }
+    50% {
+        transform: translateX(0);
+    }
+    75% {
+        transform: translateX(3px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
 .show-order-container {
     margin: 0;
     padding: 10px;
@@ -259,6 +314,7 @@ h4 {
     justify-content: space-around;
     flex-wrap: wrap;
     cursor: pointer;
+    position: relative;
 }
 
 .footer-text:hover {

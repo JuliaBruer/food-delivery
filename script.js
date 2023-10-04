@@ -163,7 +163,7 @@ function renderDishes(category) {
       result += `
         <div class="dish">
           <div class="add-btn">
-            <img onclick="addToCart('${dishes[i].name}','${dishes[i].price}')" src="./img/add.svg">
+            <img onclick="addToCart('${dishes[i].name}','${dishes[i].price}')" class="add-btn-img" src="./img/add.svg">
           </div>
             <h4>${dishes[i].name}</h4>
             <p>${dishes[i].description}</p>
@@ -300,7 +300,20 @@ function orderButton() {
 }
 
 function openOrder() {
-  document.getElementById('show-order-container').classList.remove('d-none'); 
+  let orderButton = document.getElementById('order-btn');
+  let total = parseFloat(totalPrice().replace(',', '.'));
+  let minOrder = 15.0;
+  
+  if (total >= minOrder) {
+    document.getElementById('show-order-container').classList.remove('d-none');
+  } else {
+    orderButton.classList.add('error');
+    
+    setTimeout(() => {
+      orderButton.classList.remove('error');
+      alert('Der Mindestbestellwert ist noch nicht erreicht.');
+    }, 1000);
+  }
 }
 
 //Footer starts here
